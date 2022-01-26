@@ -1,0 +1,27 @@
+body{
+    margin: 50px;
+    padding: auto;
+    background-color: rgb(176, 174, 179);
+}
+
+h2{ 
+    color: blueviolet;
+}
+.circle {
+    background-color: rgb(240, 236, 243);
+    padding: 100px; 
+    border: 5px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 25px
+}
+.fondo {
+    background-color: rgb(204, 107, 183);
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: rgb(235, 235, 47);
+    border: 5px solid orange;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (i=0; i<=10; i++){
+            console.log(i)
+        }
+    </script>
+    <script>
+        for (i=0; i<10; i++){
+            if (i === 9){
+                document.write("sortim del bucle " + i + "<br>")
+                break;
+            }
+            document.write("the number is " + i + "<br>")
+        }
+    </script>
+    <script>
+        const carrito = [
+            { nombre: 'brut', precio: 15},
+            { nombre: 'brut nature', precio: 25},
+            { nombre: 'seco', precio: 10},
+            { nombre: 'semiseco', precio:9},
+            { nombre: 'rose', precio: 12},
+            { nombre: 'gift card', precio: 50},
+        ]
+
+        for (let i = 0; i < carrito.length; i++ ){
+            console.log(carrito[i].nombre);
+        }
+
+    </script>
+</body>
+</html>

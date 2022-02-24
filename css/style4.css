@@ -1,0 +1,12 @@
+body{
+    font-size: 25px;
+    margin: 25px;
+    word-spacing: 25px;
+    line-height: 2;
+}
+.verde{
+    color: green;
+}
+.red{
+    color: red;
+}

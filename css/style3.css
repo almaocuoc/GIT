@@ -1,0 +1,16 @@
+body{
+    margin: 25px;
+}
+.columna{
+    padding: 8%;
+    border-style: solid;
+    border-color: royalblue;
+    display: inline-block;
+    border-radius: 15%;
+}
+.lila{
+    background-color: rebeccapurple;
+}
+.yellow{
+    background-color:orange;
+}

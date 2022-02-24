@@ -1,0 +1,42 @@
+header{
+    font-size: xx-large;
+    background-color:yellow;
+    text-align: center;
+    padding: 50px;
+}
+.nav-enlace{
+    display: inline-block;
+    background-color: salmon;
+    color: white;
+    padding: 10px; 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background-color: rosybrown;
+    color:royalblue;
+}
+nav{
+    background-color: rebeccapurple;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+div{
+    display: inline-block; 
+}
+.parrafo{
+    float:left;
+    background-color: blue;
+    width: 620px;
+    padding: 65px;
+}
+.aside{
+    float: right;
+    background-color: red;
+    width: 620px;
+    padding: 65px;
+}
+footer{
+    background-color: sienna;
+    padding: 50px;
+}

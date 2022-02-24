@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    margin: 25px;
+    line-height: 2;
+    font-size: large;
+}
+div.s1{
+    background-image: url("fondo1.PNG");
+    color: whitesmoke
+}
+div.s2{
+    background-image: url("fondo2.jpg");
+    color: whitesmoke
+}
+div.s3{
+    background-image: url("fondo3.jpg");
+    color: whitesmoke
+}

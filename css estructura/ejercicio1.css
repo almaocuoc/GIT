@@ -1,0 +1,41 @@
+DIV{
+    display: inline-block;
+    margin: 0%;
+}
+.eg1{
+    float: left;
+    width: 620px;
+    padding: 15px;
+    border: 1px solid black;
+
+}
+.eg2{
+    float:right;
+    width: 620px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.eg3{
+    float: left;
+    width: 850px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.eg4{
+    float:right;
+    width: 150px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.eg5{
+    float: left;
+    width: 850px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.eg6{
+    float:right;
+    width: 150px;
+    padding: 15px;
+    background-color: gray;
+}

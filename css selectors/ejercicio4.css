@@ -1,0 +1,19 @@
+body{
+    width: 200px;
+}
+ol{
+    background-color: gray;
+    padding: 20px;
+}
+ol li{
+    background-color: gray;
+    padding: 5px;
+    margin-left: 35px;
+    font-size: xx-large;
+    color: white;
+    border-color: 2px black;
+}
+.a:hover{
+    background-color: royalblue;
+    color: rosybrown;
+}

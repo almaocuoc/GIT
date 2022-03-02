@@ -20,7 +20,7 @@ a{
     background-size: cover;
     display: flexbox;
     flex-flow: column nowrap;
-    border: 1px solid #000;
+    border: 1px solid whitesmoke;
 }
 .menu{
     background: rgba(0, 0, 0, 0.1);
@@ -33,6 +33,10 @@ a{
 .logo{
     flex:1 1 auto;
     color: #fff;
+}
+.logo a{
+    color: whitesmoke;
+    font-size: xx-large;
 }
 .nav{
     flex:1 5 auto; 
@@ -53,26 +57,28 @@ a{
     align-items: center;
 }
     h1{
-        font-family: 'Lora', serif;
-        font-size: 21px;
-        color: #fff;
-        font-weight: 300;
-        text-align: center;
+        font-size: 30px;
+        color:rgb(45, 56, 14);
+        text-align: left;
         line-height: 1.6;
+        font-stretch: extra-expanded;
     }
 .section{
     background-color: #f7f7f7;
     display: flex;
 }
-.articulos{
+.articulos-container{
     background-color: #f7f7f7;
-    flex:2 1 auto;
     display: flex;
     flex-flow: row wrap;
+    gap: 1.5rem;
+}
+.articulos {
+    flex: 2;
 }
 .article{
-    flex:1 1 45%;
-    flex:1 1 40%;
+    flex:1;
+    min-width: 420px;
     color: gray; 
     font-size: 15px;
     letter-spacing: 1px;
@@ -113,9 +119,13 @@ h2{
     padding: 0 10px;
     letter-spacing: 2px;
 }
+.navegacion a:hover{
+    color: black; 
+}
 .aside{
-    background-color: #f73f52;
-    flex:1 1 auto;
+    background-color: rgb(208, 223, 142);
+    flex:1;
+    align-self: baseline; 
     margin: 10px 5px 10px 0;
 }
 .aside img{
@@ -140,6 +150,6 @@ h4{
 .pie a{
     color:#fff;
     font-size: 15px;
-    padding: 0 10px;
+    padding: 30px 20px;
     letter-spacing: 2px;
 }

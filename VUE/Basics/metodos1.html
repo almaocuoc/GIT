@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center;" id="home">
+        <h1 style="color: aqua;">{{title}}</h1>
+        <h2>Title : {{author}}</h2>
+        <h3>Topic : {{topic}}</h3>
+        <h3>{{show()}}</h3>
+        <h4>{{showName('alma')}}</h4>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#home',
+            data: {
+                title: 'el quijote',
+                author: 'cervantes',
+                topic: 'narrative'
+            },
+            methods: {
+                show: function () {
+                    return 'what book would you like to read? ' + 
+                    this.title + " - " + this.author;
+                },
+                showName: function (nombre) {
+                    return 'who wrote it? ' + 
+                    this.author + " - " + nombre
+                }
+            }
+        });
+    </script>
+</body>
+</html>

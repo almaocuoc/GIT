@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+
+<body>
+    <script>
+        let x = esMenor(4, 3);
+        console.log(x);
+        x = esMenor(10, 8);
+        console.log(x);
+        x = esMenor(1, 20);
+        console.log(x);
+
+        function esMenor(a, b) {
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+
+        }
+
+        //rectangle exercises
+        let width = 10;
+        let height = 6;
+        let area = width * height;
+        console.log(area);
+
+        //functions
+        getReminder();
+        greetInSpanish();
+
+        function getReminder() {
+            console.log('Water the plants');
+        }
+
+        function greetInSpanish() {
+            console.log('Buenas Tardes.')
+        }
+        //exercises functions:
+        function sayThanks() {
+            console.log('Thank you for your purchase! We appreciate your business.')
+        }
+        sayThanks();
+        sayThanks();
+        sayThanks();
+        // exercise 2:
+        function sayThanks(name) {
+            console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
+        }
+        sayThanks('Cole');
+
+        //exercise 3:
+        function greeting(name = 'stranger') {
+            console.log(`Hello, ${name}!`)
+        }
+
+        greeting('Nick')
+        greeting()
+        //exercise 4:
+
+        function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs') {
+            console.log(`Remember to buy ${item1}`);
+            console.log(`Remember to buy ${item2}`);
+            console.log(`Remember to buy ${item3}`);
+        }
+        makeShoppingList();
+        makeShoppingList('huevos');
+
+        // return example result undefined:
+        function rectangleArea(width, height) {
+            let area = width * height;
+        }
+        console.log(rectangleArea(5, 7))
+
+        // return example ok:
+        function rectangleArea(width, height) {
+            let area = width * height;
+            return area;
+        }
+        console.log(rectangleArea(5, 7))
+
+        // return example ok 2:
+
+        function rectangleArea(width, height) {
+            if (width < 0 || height < 0) {
+                return 'You need positive integers to calculate area!';
+            }
+            return width * height;
+        }
+        console.log(rectangleArea(5, 7))
+
+        // example return:
+        function monitorCount(rows, columns) {
+            return rows * columns;
+        }
+
+        // example return 4:
+
+        function monitorCount(rows, columns) {
+            return rows * columns;
+        }
+
+        function costOfMonitors(rows, columns) {
+            return monitorCount(rows, columns) * 200;
+        }
+        const totalCost = costOfMonitors(5, 4);
+        console.log(totalCost);
+        const numOfMonitors = monitorCount(5, 4);
+        console.log(numOfMonitors)
+
+
+        // example:
+        const plantNeedsWater = function (day) {
+            if (day === 'Wednesday') {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        plantNeedsWater('Tuesday');
+        console.log(plantNeedsWater('Tueday'));
+        console.log(plantNeedsWater('Wednesday'));
+
+        // arrow function:
+        const rectangleArea = (width, height) => {
+            let area = width * height;
+            return area;
+        };
+        const rectangleArea = (width, height) => {
+            let area = width * height;
+            return area;
+        };
+        
+    </script>
+</body>
+
+</html>

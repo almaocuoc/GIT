@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // primer exercisi:
+
+        const group1 = [20, 40];
+        console.table(group1);
+
+        const group2 = [50, 80];
+        console.table(group2);
+
+        for (let i = 0; i < group1.length; i++) {
+            console.log(group1[i] + "," + group2);
+        }
+        //meses:
+        const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
+        console.log(meses.length);
+        for (let i = 0; i < meses.length; i++) {
+            console.log(meses[i]);
+        }
+
+        // dos arrays:
+        const nombres = ['alma', 'rosa', 'ortiz', 'castaneda', 'arias'];
+
+        //codecademy:
+        let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+        console.table(newYearsResolutions);
+        console.log(newYearsResolutions);
+
+        let concepts = ['creating arrays', 'array structures', 'array manipulation'];
+        console.table(concepts);
+        let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+        const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+        condiments[0] = 'Mayo';
+        console.log(condiments);
+        condiments = ['Mayo'];
+        console.log(condiments);
+
+        const chores = ['wash dishes', 'do laundry', 'take out trash'];
+        chores.push('clean table', 'remove dust');
+        console.log(chores);
+        chores.pop();
+        console.log(chores);
+
+        const newItemTracker = ['item 0', 'item 1', 'item 2'];
+        const removed = newItemTracker.pop();
+        console.log(newItemTracker);
+        console.log(removed);
+
+
+        const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil',
+            'plantains'
+        ];
+        groceryList.shift();
+
+        groceryList.unshift('popcorn');
+        console.log(groceryList);
+        console.log(groceryList.slice(1, 4));
+        console.log(groceryList);
+        const pastaIndex = groceryList.indexOf('pasta');
+        console.log(pastaIndex);
+
+
+
+        const concept = ['arrays', 'can', 'be', 'mutated'];
+
+        function changeArr(arr) {
+            arr[3] = 'MUTATED';
+        }
+
+        changeArr(concept);
+        console.log(concept);
+
+        function removeElement(newArr) {
+            newArr.pop();
+        }
+        removeElement(concept);
+        console.log(concept);
+
+        const numberClusters = [
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ];
+        const target = numberClusters[2][1];
+        console.log(numberClusters);
+        console.log(target);
+    </script>
+
+
+
+</body>
+
+</html>

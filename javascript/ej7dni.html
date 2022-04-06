@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    let userDni = '27420617V';
+    let numDni = userDni.substring(0, 8);
+    let letraDni = userDni.charAt(8);
+    let numero = numDni %= 23;
+    let ofiLtDni = 'TRWAGMYFPDXBNJZSQVHLCKE';
+    ofiLtDni = ofiLtDni.substring(numero, numero + 1);
+
+    if (letraDni === ofiLtDni) {
+        'Valid DNI'
+    } else {
+        'Enter a valid DNI'
+    }
+    console.log(newDni);
+
+
+    </script>
+</body>
+
+</html>

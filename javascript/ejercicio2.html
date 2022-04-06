@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>switch exercise</title>
 </head>
 <body>
     <script>
+        let role = 'admin'
+
         switch (role) {
             case 'ADMIN':
-                console.log('usario con derechos de administrador')
+                console.log('usario con derechos de administrador');
                 break;
             case 'EDITOR':
-                console.log('usario solo edita sus registros')
+                console.log('usario solo edita sus registros');
                 break; 
             case 'AUTOR':
-                console.log('usario solo registra')
+                console.log('usario solo registra');
                 break;
             default:
-            console.log('visitante sin derechos para modificar')
+            console.log('visitante sin derechos para modificar');
                 break;
         }
     </script>

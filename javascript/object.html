@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const perfume = {
+            id: "12345",
+            name: "Eternity",
+            type: "cosmetica",
+            price: 50,
+        }
+        const cream = {
+            id: "12346",
+            name: "Occitane",
+            type: "cosmetica",
+            price: 29,
+        }
+        const eyeLiner = {
+            id: "12347",
+            name: "Lancome",
+            type: "cosmetica",
+            price: 25,
+        }
+        const toner = {
+            id: "12348",
+            name: "Lancome fresh",
+            type: "cosmetica",
+            price: 35,
+        }
+        console.log(perfume);
+        console.log(cream);
+        console.log(eyeLiner);
+        console.log(toner);
+
+// subtotal objecte:
+const perfumeSubtotal = {
+    id: "12345",
+            name: "Eternity",
+            type: "cosmetica",
+            price: "50",
+            subtotal: {
+                precio: 50,
+                qty: 1,
+                descuento: 0.10,
+
+            }
+}
+
+    </script>
+</body>
+</html>

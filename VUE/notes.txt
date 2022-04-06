@@ -1,0 +1,9 @@
+ <a v-bind:href="URL">
+                <img v-bind:src="imagen"/>
+            </a>
+
+<h1>{{ mensaje + 1 }}</h1>
+            <h2>{{ ok? 'YES' : 'NO' }}</h2>
+            <h3>{{ number }}</h3>
+            <button v-on:click="number ++">incremento</button>
+            <button v-on:click="number --">decremento</button>

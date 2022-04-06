@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section" class="section">
+        <p id="mainHeading" class="heading">
+            This is the main heading(not a header)
+        </p>
+        <p id="Heading" class="heading">
+            This is a heading
+        </p>
+        <p id="subHeading" class="heading">
+            This is a subheading
+        </p>
+        <ul>
+            <li id="primero">Elemento 1</li>
+            <li id="segundo">Elemento 2</li>
+            <li id="tercero">Elemento 3</li>
+        </ul>
+    </section>
+
+    <script>
+        // get element by id:
+        const el3 = document.getElementById("mainHeading");
+        console.log(el3);
+        // get a list of elements with same classname:
+        const el4 = document.getElementsByClassName("heading");
+        console.log(el4);
+        const el5 = document.getElementsByTagName("p");
+        console.log(el5);
+        
+
+
+    </script>
+</body>
+</html>

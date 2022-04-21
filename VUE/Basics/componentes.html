@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{name}}</h1>
+        <button @click="onAdd">{{count}}</button>
+        <h3>{{first}} {{last}}</h3>
+        <h2>boton componente</h2>
+        <my-button></my-button>
+        <user-detail first="alma" last="ortiz"></user-detail>
+        <user-detail v-bind:first="alma" v-bind:last="ortiz"></user-detail>
+    </div>
+
+<script src="/Basics/componentes.js"></script>
+<script src="/Basics/compapps.js"></script>
+<script src="/Basics/compuser.js"></script>
+<script src="/Basics/compappuser.js"></script>
+
+
+</body>
+</html>

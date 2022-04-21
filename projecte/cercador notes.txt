@@ -1,0 +1,43 @@
+<ul class="nav-shop">
+ <li class="nav-item">
+                <i class="ti-search"></i>
+                <input id="search" type="text" class="input" placeholder="search">
+                <!-- <button id="search" class="button button-hero" h-ref="#">
+                  <i class="ti-search"></i>
+                  <input type="text">
+                </button> -->
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="ti-shopping-cart"></i><span class="nav-shop__circle"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="button button-header" href="#">Comprar</a> -->
+              </li>
+            </ul>
+
+----------------------------------------
+search navegador que sale la lista completa:ç
+const searchInput = document.getElementById('search')
+searchInput.addEventListener("input", (e) => {
+    let value = e.target.value
+    if (value && value.trim().length > 0) {
+        value = value.trim().toLowerCase()
+        setList(Productos.filter(llama => {
+            return llama.titulo.includes(value)
+        }))
+    } else {
+        return "producto no encontrado"
+    }
+})
+
+function setList(results) {
+    for (const llama of Productos){
+        const resultItem = document.createElement('li')
+        resultItem.classList.add('result-item')
+        const text = document.createTextNode(llama.titulo)
+        resultItem.appendChild(text)
+        list.appendChild(resultItem)
+    }
+}
